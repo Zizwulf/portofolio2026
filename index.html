@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nur Azizah Laili | Graphic Designer & Video Editor</title>
+    <meta name="description" content="Portfolio of Nur Azizah Laili, Graphic Designer & Video Editor helping brands communicate through thoughtful visuals and engaging videos." />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Phosphor Icons (Modern, Clean icons fitting the requested aesthetic) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="antialiased relative">
+    <div class="cursor-dot hidden md:block"></div>
+    <div class="cursor-outline hidden md:block"></div>
+
+    <nav class="fixed w-full z-40 top-0 transition-all duration-300" id="navbar">
+      <div class="absolute inset-0 bg-white/70 backdrop-blur-md border-b border-borderline"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a href="#" class="text-xl font-bold tracking-tight text-text-main interactive">NAL<span class="text-accent-hover">.</span></a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="#home" class="text-text-muted hover:text-text-main font-medium transition-colors interactive">Home</a>
+            <a href="#about" class="text-text-muted hover:text-text-main font-medium transition-colors interactive">About</a>
+            <a href="#graphic-design" class="text-text-muted hover:text-text-main font-medium transition-colors interactive">Graphic Design</a>
+            <a href="#video-editing" class="text-text-muted hover:text-text-main font-medium transition-colors interactive">Video Editing</a>
+            <a href="#experience" class="text-text-muted hover:text-text-main font-medium transition-colors interactive">Experience</a>
+          </div>
+
+          <!-- CTA & Mobile Toggle -->
+          <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden md:inline-flex bg-text-main text-white px-6 py-2.5 rounded-full font-medium hover:bg-accent-hover hover:text-text-main transition-colors duration-300 interactive">Let's Talk</a>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="lg:hidden text-text-main focus:outline-none interactive">
+              <i class="ph ph-list text-3xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="lg:hidden absolute top-20 left-0 w-full bg-white border-b border-borderline flex flex-col px-6 py-4 space-y-4 shadow-lg origin-top scale-y-0 opacity-0 transition-all duration-300 ease-in-out">
+        <a href="#home" class="mobile-link text-lg font-medium text-text-main">Home</a>
+        <a href="#about" class="mobile-link text-lg font-medium text-text-main">About</a>
+        <a href="#graphic-design" class="mobile-link text-lg font-medium text-text-main">Graphic Design</a>
+        <a href="#video-editing" class="mobile-link text-lg font-medium text-text-main">Video Editing</a>
+        <a href="#experience" class="mobile-link text-lg font-medium text-text-main">Experience</a>
+        <a href="#contact" class="mobile-link text-lg font-medium text-text-main">Contact</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section id="home" class="pt-32 pb-20 lg:pt-40 lg:pb-32 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <!-- Left: Typography -->
+          <div class="reveal">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-mint text-accent-hover font-semibold rounded-full text-sm mb-6">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-hover"></span>
+              </span>
+              2020 — Present
+            </div>
+
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-text-main">
+              Hi, I'm <br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-text-main to-text-muted">Nur Azizah Laili</span>
+            </h1>
+            <h2 class="text-2xl lg:text-3xl font-semibold text-text-muted mb-6">Graphic Designer & <br />Video Editor</h2>
+
+            <p class="text-lg text-text-muted max-w-md mb-10 leading-relaxed">Helping brands communicate through thoughtful visuals and engaging videos. Clean, modern, and purposeful design.</p>
+
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#graphic-design"
+                class="bg-accent hover:bg-accent-hover text-text-main px-8 py-4 rounded-full font-semibold transition-all shadow-[0_4px_14px_0_rgba(168,230,179,0.39)] hover:shadow-[0_6px_20px_rgba(168,230,179,0.23)] interactive"
+                >Explore Portfolio</a
+              >
+              <a href="#contact" class="bg-secondary border border-borderline hover:border-accent hover:bg-mint text-text-main px-8 py-4 rounded-full font-semibold transition-all interactive">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Right: Playful Bento Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal">
+            <!-- Graphic Design Box -->
+            <div class="col-span-2 md:col-span-1 bento-card p-6 flex flex-col justify-between animate-float relative overflow-hidden">
+              <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
+              <i class="ph-fill ph-bezier-curve text-4xl text-accent-hover mb-4"></i>
+              <div>
+                <h3 class="text-xl font-bold mb-1">Graphic Design</h3>
+                <p class="text-sm text-text-muted">Visual Identities & UI</p>
+              </div>
+            </div>
+
+            <!-- Top Right Stack -->
+            <div class="col-span-2 md:col-span-1 grid grid-rows-2 gap-4">
+              <!-- Projects Stat -->
+              <div class="bento-card p-6 flex flex-col justify-center items-center text-center animate-float-delayed">
+                <h3 class="text-4xl font-extrabold text-text-main mb-1">100+</h3>
+                <p class="text-sm text-text-muted font-medium">Projects Delivered</p>
+              </div>
+              <!-- Brands Stat -->
+              <div class="bento-card bg-text-main p-6 flex flex-col justify-center items-center text-center animate-float text-white">
+                <h3 class="text-4xl font-extrabold text-accent mb-1">5+</h3>
+                <p class="text-sm text-gray-400 font-medium">Core Brands</p>
+              </div>
+            </div>
+
+            <!-- Bottom Wide Box -->
+            <div class="col-span-2 bento-card p-6 flex flex-col md:flex-row justify-between items-start md:items-center animate-float-delayed bg-mint/50">
+              <div>
+                <i class="ph-fill ph-video-camera text-4xl text-accent-hover mb-2 md:mb-0 md:mr-4"></i>
+                <div>
+                  <h3 class="text-xl font-bold mb-1">Video Editing</h3>
+                  <p class="text-sm text-text-muted">Reels, TikToks, Brand Videos</p>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 flex -space-x-3">
+                <div class="w-10 h-10 rounded-full bg-white border-2 border-mint flex items-center justify-center shadow-sm"><i class="ph-fill ph-instagram-logo text-pink-500"></i></div>
+                <div class="w-10 h-10 rounded-full bg-white border-2 border-mint flex items-center justify-center shadow-sm"><i class="ph-fill ph-tiktok-logo text-black"></i></div>
+                <div class="w-10 h-10 rounded-full bg-white border-2 border-mint flex items-center justify-center shadow-sm"><i class="ph-fill ph-youtube-logo text-red-500"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 bg-primary px-6 lg:px-12 max-w-7xl mx-auto border-t border-borderline">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-4xl font-extrabold mb-4">About Me</h2>
+          <p class="text-text-muted">A quick glimpse into my world and capabilities.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+          <!-- Main Intro Card -->
+          <div class="md:col-span-2 bento-card p-8 flex flex-col md:flex-row gap-8 items-center bg-secondary">
+            <div class="w-40 h-40 shrink-0 rounded-4xl overflow-hidden img-zoom-container bg-mint shadow-inner">
+              <!-- Placeholder for Portrait, using a clean gradient/abstract if no real image -->
+              <img src="/bahan/ppziz.jpg" alt="Nur Azizah Laili" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-3">Creative Thinker & Maker</h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Your brand deserves visuals that inspire trust and stand out. I create graphic design and video content that help businesses communicate clearly, connect with their audience, and build a consistent brand presence.
+            </p>
+              <p class="text-text-muted leading-relaxed">Every detail is crafted with clarity, consistency, and purpose.</p>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="bento-card p-8 flex flex-col justify-center items-center text-center relative overflow-hidden">
+            <!-- Subtle map background representation -->
+            <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#1c1c1c 1px, transparent 1px); background-size: 20px 20px"></div>
+            <i class="ph-fill ph-map-pin text-4xl text-accent-hover mb-4"></i>
+            <h3 class="text-xl font-bold mb-1">Based in</h3>
+            <p class="text-text-muted mb-5">
+              North Sumatera, <br />
+              Indonesia
+            </p>
+            <p><i class="ph-bold ph-envelope-simple"></i> azizahlaili.nal@gmail.com</p>
+          </div>
+
+          <!-- Availability Card -->
+          <div class="bento-card p-8 bg-mint border-none flex flex-col justify-center items-center text-center">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm animate-pulse">
+              <i class="ph-fill ph-sparkle text-3xl text-accent-hover"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-1">Freelance</h3>
+            <p class="text-text-main font-medium">Available for new projects</p>
+          </div>
+
+          <!-- Expertise Snippet -->
+          <div class="md:col-span-2 bento-card p-8">
+            <!-- Expertise -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+              <div class="text-center">
+                <h4 class="font-bold text-lg mb-1">Design</h4>
+                <p class="text-xs text-text-muted">Brand & UI</p>
+              </div>
+
+              <div class="text-center">
+                <h4 class="font-bold text-lg mb-1">Video</h4>
+                <p class="text-xs text-text-muted">Editing & Motion</p>
+              </div>
+
+              <div class="text-center">
+                <h4 class="font-bold text-lg mb-1">Social</h4>
+                <p class="text-xs text-text-muted">Content Creation</p>
+              </div>
+
+              <div class="text-center">
+                <h4 class="font-bold text-lg mb-1">Print</h4>
+                <p class="text-xs text-text-muted">Packaging & Merch</p>
+              </div>
+            </div>
+
+            <!-- Software -->
+            <div class="reveal">
+              <h3 class="text-center text-sm font-bold tracking-widest text-text-muted uppercase mb-8">Software & Tools</h3>
+
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+                  <!-- Figma -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-8 h-8" alt="Figma" />
+                    <span class="text-xs font-semibold">Figma</span>
+                  </div>
+
+                  <!-- Illustrator -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" class="w-8 h-8" alt="Illustrator" />
+                    <span class="text-xs font-semibold">Illustrator</span>
+                  </div>
+
+                  <!-- Photoshop -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" class="w-8 h-8" alt="Photoshop" />
+                    <span class="text-xs font-semibold">Photoshop</span>
+                  </div>
+
+                  <!-- Premiere Pro -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" class="w-8 h-8" alt="Premiere Pro" />
+                    <span class="text-xs font-semibold">Premiere</span>
+                  </div>
+
+                  <!-- CapCut -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="/bahan/capcut-svgrepo-com.svg" class="w-8 h-8" alt="CapCut" />
+                    <span class="text-xs font-semibold">CapCut</span>
+                  </div>
+
+                  <!-- Canva -->
+                  <div class="tool-card w-24 h-24 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 border border-borderline interactive">
+                    <img src="/bahan/canva-svgrepo-com.svg" class="w-8 h-8" alt="Canva" />
+                    <span class="text-xs font-semibold">Canva</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="py-20 bg-secondary px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl font-extrabold mb-4">My Expertise</h2>
+            <p class="text-text-muted">The skills and tools I use to bring ideas to life.</p>
+          </div>
+
+          <!-- Expertise Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 reveal">
+            <!-- Card 1 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-fingerprint text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Intermediate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Brand Identity</h3>
+              <p class="text-sm text-text-muted">Crafting memorable logos, color palettes, and comprehensive brand guidelines.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-instagram-logo text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Intermediate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Social Media Design</h3>
+              <p class="text-sm text-text-muted">Engaging carousel posts, stories, and cohesive grid planning.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-megaphone text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Intermediate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Marketing Design</h3>
+              <p class="text-sm text-text-muted">Digital ads, banners, and promotional materials that drive conversion.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-printer text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Intermediate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Print Design</h3>
+              <p class="text-sm text-text-muted">Packaging, brochures, business cards, and physical marketing assets.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-scissors text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Intermediate</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Video Editing</h3>
+              <p class="text-sm text-text-muted">Seamless cuts, color grading, audio mixing for reels and brand videos.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bento-card bg-white p-8 group">
+              <div class="flex justify-between items-start mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center group-hover:bg-accent-hover transition-colors">
+                  <i class="ph-fill ph-magic-wand text-2xl text-text-main"></i>
+                </div>
+                <span class="px-3 py-1 bg-secondary text-xs font-semibold rounded-full border border-borderline text-text-muted">Novice</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Motion Graphics</h3>
+              <p class="text-sm text-text-muted">Simple animations, kinetic typography, and logo reveals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="graphic-design" class="py-24 bg-primary px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+          <div>
+            <h2 class="text-4xl font-extrabold mb-4">Graphic Design</h2>
+            <p class="text-text-muted">Selected brand identities and visual systems.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+          <!-- Project Card 1 -->
+          <div class="bento-card group cursor-pointer overflow-hidden flex flex-col" onclick="openProject('kliniix')">
+            <div class="h-64 sm:h-80 w-full overflow-hidden img-zoom-container rounded-t-4xl">
+              <img src="/bahan/Kliniixslimm/coverks.jpg" alt="Kliniix Slimm" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-8 bg-white rounded-b-4xl flex-grow flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold tracking-wider text-text-muted uppercase">Aesthetic Clinic</span>
+                  <span class="text-xs font-semibold px-2 py-1 bg-mint text-accent-hover rounded-full">2023 - 2026</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Kliniix Slimm</h3>
+                <p class="text-sm text-text-muted mb-6">
+                  Kliniix Slimm dr. Imelda is Medan's pioneering premium medical aesthetics and body contouring clinic with over 21 years of expertise. Led by certified medical practitioners, the brand delivers high-end, head-to-toe holistic beauty solutions, specializing in advanced Filler, Botox, Slimming, and Laser treatments.
+                  
+                </p>
+              </div>
+              <button class="flex items-center text-accent-hover font-semibold group-hover:text-text-main transition-colors mt-auto">
+                View Case Study <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Project Card 3 -->
+          <div class="bento-card group cursor-pointer overflow-hidden flex flex-col" onclick="openProject('infinitypod')">
+            <div class="h-64 sm:h-80 w-full overflow-hidden img-zoom-container rounded-t-4xl">
+              <img src="/bahan/portofolioinfinitypod.png" alt="Infinity Pod" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-8 bg-white rounded-b-4xl flex-grow flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold tracking-wider text-text-muted uppercase">Lifestyle & Consumer Electronics</span>
+                  <span class="text-xs font-semibold px-2 py-1 bg-mint text-accent-hover rounded-full">2023</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Infinity Pod</h3>
+                <p class="text-sm text-text-muted mb-6">Infinity Pod is a lifestyle and consumer electronics retailer focused on modern vaping devices and tech accessories. The brand differentiates itself in a competitive market through a sleek, digital-first presence that targets tech-savvy consumers. It emphasizes product innovation and a contemporary aesthetic to deliver a refined user experience.</p>
+              </div>
+              <button class="flex items-center text-accent-hover font-semibold group-hover:text-text-main transition-colors mt-auto">
+                View Case Study <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="bento-card group cursor-pointer overflow-hidden flex flex-col" onclick="openProject('kemangi')">
+            <div class="h-64 sm:h-80 w-full overflow-hidden img-zoom-container rounded-t-4xl">
+              <img src="/bahan/Kemangi/Kemangi Residence.jpg" alt="Kemangi Residence" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-8 bg-white rounded-b-4xl flex-grow flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold tracking-wider text-text-muted uppercase">Real Estate</span>
+                  <span class="text-xs font-semibold px-2 py-1 bg-mint text-accent-hover rounded-full">2023</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Kemangi Residence</h3>
+                <p class="text-sm text-text-muted mb-6">Kemangi Residence is a premium suburban housing development focused on green living and family centric residential concepts. The project emphasizes sustainable architecture and comfortable, nature inspired environments designed to provide high quality living spaces. By blending modern home design with eco friendly amenities, the brand caters to families seeking a balanced and healthy lifestyle in an urban setting.</p>
+              </div>
+              <button class="flex items-center text-accent-hover font-semibold group-hover:text-text-main transition-colors mt-auto">
+                View Case Study <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="bento-card group cursor-pointer overflow-hidden flex flex-col" onclick="openProject('summa')">
+            <div class="h-64 sm:h-80 w-full overflow-hidden img-zoom-container rounded-t-4xl">
+              <img src="/bahan/Summa/PORTOFOLIO SUMMA.png" alt="Summa Coffee Roastery" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-8 bg-white rounded-b-4xl flex-grow flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold tracking-wider text-text-muted uppercase">Food And Beverage</span>
+                  <span class="text-xs font-semibold px-2 py-1 bg-mint text-accent-hover rounded-full">2023</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Summa Coffee Roastery</h3>
+                <p class="text-sm text-text-muted mb-6">Summa Coffee Company is an Indonesian coffee roastery and distributor based in Medan, North Sumatra. Founded in December 2017, the company specializes in sourcing single-origin beans directly from local farmers across Indonesia (e.g., Aceh, Flores, Bali, Kerinci, and West Java) and supplying custom blends and equipment to the HoReCa (Hotel, Restaurant, and Cafe) industry.</p>
+              </div>
+              <button class="flex items-center text-accent-hover font-semibold group-hover:text-text-main transition-colors mt-auto">
+                View Case Study <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="video-editing" class="py-24 bg-secondary border-y border-borderline px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+            <div>
+              <h2 class="text-4xl font-extrabold mb-4">Video Editing</h2>
+              <p class="text-text-muted">Engaging motion content for social and digital platforms.</p>
+            </div>
+           
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+
+            <!--
+          <div class="bento-card bg-white p-6 rounded-3xl shadow-sm cursor-pointer group hover:-translate-y-2 transition-transform flex flex-col gap-4" onclick="openVideoProject('summa-video')">
+    
+            <div class="overflow-hidden rounded-2xl relative w-full h-0 pointer-events-none" style="padding-top: 177.77%;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/gQ806_jalWM?controls=0" 
+                    title="YouTube Shorts Player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    The Sit-Up Myth for a Flat Stomach: Visceral Fat Facts
+                </h3>
+                <p class="text-sm text-gray-600 line-clamp-3">
+                    Demystifying targeted fat burn. Directed & edited end-to-end campaign achieving 10K+ organic reach, securing 23 saves and 15 shares.
+                </p>
+            </div>
+
+          </div>
+            -->
+
+          <!---VIdeo I-->
+          <div class="bento-card bg-white p-6 rounded-3xl shadow-sm cursor-pointer group hover:-translate-y-2 transition-transform flex flex-col gap-4">
+    
+            <!-- Video Container -->
+            <!-- Catatan: pointer-events-none ditambahkan agar iframe tidak mencuri klik dari parent div -->
+            <div class="overflow-hidden rounded-2xl relative w-full h-0 pointer-events-none" style="padding-top: 177.77%;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/gQ806_jalWM?controls=0" 
+                    title="YouTube Shorts Player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Text Container -->
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    The Sit-Up Myth for a Flat Stomach: Visceral Fat Facts
+                </h3>
+                <p class="text-sm text-gray-600 line-clamp-3">
+                    Demystifying targeted fat burn. Directed & edited end-to-end campaign achieving 10K+ organic reach, securing 23 saves and 15 shares.
+                </p>
+            </div>
+
+          </div>
+
+          <!---test 2-->
+          <div class="bento-card bg-white p-6 rounded-3xl shadow-sm cursor-pointer group hover:-translate-y-2 transition-transform flex flex-col gap-4">
+    
+            <!-- Video Container -->
+            <!-- Catatan: pointer-events-none ditambahkan agar iframe tidak mencuri klik dari parent div -->
+            <div class="overflow-hidden rounded-2xl relative w-full h-0 pointer-events-none" style="padding-top: 177.77%;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/CnqYYnOIWfk?controls=0" 
+                    title="YouTube Shorts Player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Text Container -->
+            <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    Sleep Deprivation & Weight Gain | Kliniix Slimm
+                </h3>
+                <p class="text-sm text-gray-600 line-clamp-3">
+                    Directed and edited this commercial video end-to-end via CapCut. Backed by paid ads, it generated 15K+ reach, 49 shares, and 25 saves, demonstrating strong audience intent and commercial value.
+                </p>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="py-24 bg-primary px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-4xl font-extrabold mb-4">Experience & Education</h2>
+          <p class="text-text-muted">My professional journey so far.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 reveal">
+          <!-- Experience Timeline -->
+          <div class="lg:col-span-2">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="ph-fill ph-briefcase text-accent-hover"></i> Work Experience</h3>
+
+            <div class="relative border-l border-borderline ml-4 md:ml-0 md:border-l-0 md:border-t md:flex md:flex-row md:pt-8 pt-0 gap-8">
+              <!-- Job 1 -->
+              <div class="mb-10 ml-8 md:mb-0 md:ml-0 relative md:flex-1 md:pr-4 group">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-accent rounded-full -left-11 ring-4 ring-white md:-top-[44px] md:left-0 group-hover:scale-125 transition-transform"></span>
+                <h4 class="flex items-center mb-1 text-lg font-bold text-text-main">Kliniix Slimm</h4>
+                <span class="block mb-2 text-sm font-medium text-accent-hover">Multimedia Designer</span>
+                <time class="block mb-3 text-sm font-normal leading-none text-text-muted">June 2024 – Present</time>
+                <p class="text-sm font-normal text-text-muted">Leading the multimedia strategy, creating high-converting social assets and video content for campaigns.</p>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="mb-10 ml-8 md:mb-0 md:ml-0 relative md:flex-1 md:pr-4 group">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-mint border border-accent rounded-full -left-11 ring-4 ring-white md:-top-[44px] md:left-0 group-hover:bg-accent transition-colors"></span>
+                <h4 class="flex items-center mb-1 text-lg font-bold text-text-main">Sodium.ID</h4>
+                <span class="block mb-2 text-sm font-medium text-text-muted">Creative Designer</span>
+                <time class="block mb-3 text-sm font-normal leading-none text-text-muted">Oct 2023 – March 2024</time>
+                <p class="text-sm font-normal text-text-muted">Conceptualized brand identities and executed digital marketing designs for various agency clients.</p>
+              </div>
+
+              <!-- Job 3 -->
+              <div class="mb-10 ml-8 md:mb-0 md:ml-0 relative md:flex-1 group">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-mint border border-accent rounded-full -left-11 ring-4 ring-white md:-top-[44px] md:left-0 group-hover:bg-accent transition-colors"></span>
+                <h4 class="flex items-center mb-1 text-lg font-bold text-text-main">Summa Coffee Co.</h4>
+                <span class="block mb-2 text-sm font-medium text-text-muted">Graphic Designer</span>
+                <time class="block mb-3 text-sm font-normal leading-none text-text-muted">July 2020 – Nov 2021</time>
+                <p class="text-sm font-normal text-text-muted">Developed core branding, packaging, and in-store marketing collaterals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="ph-fill ph-graduation-cap text-accent-hover"></i> Education</h3>
+            <div class="bento-card p-8 bg-secondary h-[calc(100%-4rem)]">
+              <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+                <i class="ph-fill ph-buildings text-xl text-text-main"></i>
+              </div>
+              <h4 class="text-xl font-bold mb-2">Medan State Polytechnic</h4>
+              <p class="text-accent-hover font-semibold mb-2">Associate Degree</p>
+              <p class="text-text-main font-medium mb-4">Information Management</p>
+              <p class="text-sm text-text-muted">Built a strong foundation in digital systems, project management, and logical structuring which aids in my systematic approach to design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-32 bg-text-main text-white relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[100%] rounded-full bg-accent opacity-10 blur-[100px]"></div>
+          <div class="absolute -bottom-[20%] -left-[10%] w-[50%] h-[100%] rounded-full bg-mint opacity-10 blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
+          <h2 class="text-5xl lg:text-7xl font-extrabold mb-8 tracking-tight">
+            Let's build something <br />
+            <span class="text-accent">together.</span>
+          </h2>
+          <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Whether it's a full brand identity overhaul or a single dynamic reel, I'm ready to bring your vision to life.</p>
+
+          <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-16">
+            <a href="mailto:azizahlaili.nal@gmail.com" class="w-full md:w-auto bg-accent hover:bg-white text-text-main px-10 py-5 rounded-full font-bold text-lg transition-colors flex items-center justify-center gap-3 interactive">
+              <i class="ph-bold ph-envelope-simple"></i> Email Me
+            </a>
+            <a
+              href="https://wa.me/6285766075749"
+              target="_blank"
+              class="w-full md:w-auto bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-text-main px-10 py-5 rounded-full font-bold text-lg transition-colors flex items-center justify-center gap-3 interactive"
+            >
+              <i class="ph-bold ph-whatsapp-logo"></i> +62 857-6607-5749
+            </a>
+          </div>
+
+          <div class="flex justify-center gap-8 border-t border-gray-800 pt-12">
+            <a href="https://www.behance.net/azizahlaili1" target="_blank" class="text-gray-400 hover:text-accent transition-colors flex flex-col items-center gap-2 interactive">
+              <i class="ph-fill ph-behance-logo text-3xl"></i>
+              <span class="text-sm font-medium">Behance</span>
+            </a>
+            <a href="https://www.instagram.com/madeby.ziz?igsh=MW01bW1xazBjZWx4Zg%3D%3D" target="_blank" class="text-gray-400 hover:text-accent transition-colors flex flex-col items-center gap-2 interactive">
+              <i class="ph-fill ph-instagram-logo text-3xl"></i>
+              <span class="text-sm font-medium">Instagram</span>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-text-main py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+          <a href="#" class="text-xl font-bold tracking-tight text-white interactive">NAL<span class="text-accent">.</span></a>
+          <p class="text-gray-500 text-sm">© <span id="year">2026</span> Nur Azizah Laili. All rights reserved.</p>
+          <div class="flex space-x-6 text-sm text-gray-500">
+            <a href="#home" class="hover:text-white transition-colors">Back to top</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- This replaces multiple HTML pages with a seamless SPA experience -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-white overflow-y-auto hidden">
+      <!-- Close Button -->
+      <button
+        onclick="closeProject()"
+        class="fixed top-6 right-6 lg:top-10 lg:right-10 z-50 w-14 h-14 bg-white/80 backdrop-blur-md rounded-full shadow-lg flex items-center justify-center hover:bg-accent hover:text-text-main transition-colors text-text-main interactive"
+      >
+        <i class="ph-bold ph-x text-2xl"></i>
+      </button>
+
+      <div id="project-content" class="pb-20">
+        <!-- Content will be injected here by JS -->
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

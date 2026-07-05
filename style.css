@@ -1,0 +1,131 @@
+/* Base & Scrollbar */
+body {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background-color: #a8e6b3;
+  color: #1c1c1c;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fbf8;
+}
+::-webkit-scrollbar-thumb {
+  background: #e6ece8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8e6b3;
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #6fcf97;
+}
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #a8e6b3;
+  transition:
+    width 0.2s,
+    height 0.2s,
+    background-color 0.2s;
+}
+
+/* Interactive Hover States for Cursor */
+.hovering .cursor-outline {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(168, 230, 179, 0.2);
+  border-color: transparent;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}
+
+/* Bento Grid & Card Styles */
+.bento-card {
+  background-color: #f8fbf8;
+  border: 1px solid #e6ece8;
+  border-radius: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bento-card:hover {
+  box-shadow: 0 10px 40px -10px rgba(168, 230, 179, 0.4);
+  transform: translateY(-4px);
+  border-color: #a8e6b3;
+}
+
+/* Tool Card Hover Specifics */
+.tool-card:hover {
+  transform: translateY(-8px) rotate(2deg);
+  box-shadow: 0 0 20px rgba(168, 230, 179, 0.6);
+}
+
+/* Scroll Reveal Utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Magnetic Button Wrap */
+.magnetic-wrap {
+  display: inline-block;
+}
+
+/* Image Hover Zoom */
+.img-zoom-container {
+  overflow: hidden;
+  border-radius: 24px;
+}
+.img-zoom-container img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Case Study Modal Transitions */
+#project-modal {
+  clip-path: circle(0% at 50% 100%);
+  transition: clip-path 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+}
+#project-modal.open {
+  clip-path: circle(150% at 50% 50%);
+}
+
+.instagram-media {
+  margin: 0 auto !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
